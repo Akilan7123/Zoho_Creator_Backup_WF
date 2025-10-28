@@ -1,0 +1,22 @@
+string hc_get_Image_Published_URL(int hc_id, string fieldName)
+{
+	image = Happy_Customer[ID == hc_id];
+	return_data = "";
+	if(fieldName == "Garments")
+	{
+		if(image.Garments != null && image.Garments != "")
+		{
+			rec_id = image.ID;
+			return_data = "https://creatorapp.zohopublic.in/file" + zoho.appuri + "All_Happy_Customers/" + rec_id + "/" + fieldName + "/image-download/E3GFuGnmykST00BVXT35njjxtdmbDDrweUKwbKZA5S1NuNkeKyDaBdqmS99E6S9mGH6q7nW1ufYxQJDd67N7T6fdnjge2bKxFf1v?filepath=/" + image.Garments;
+		}
+	}
+	else if(fieldName == "Engineers")
+	{
+		if(image.Engineers != null && image.Engineers != "")
+		{
+			rec_id = image.ID;
+			return_data = "https://creatorapp.zohopublic.in/file" + zoho.appuri + "All_Happy_Customers/" + rec_id + "/" + fieldName + "/image-download/E3GFuGnmykST00BVXT35njjxtdmbDDrweUKwbKZA5S1NuNkeKyDaBdqmS99E6S9mGH6q7nW1ufYxQJDd67N7T6fdnjge2bKxFf1v?filepath=/" + image.Engineers;
+		}
+	}
+	return return_data;
+}
