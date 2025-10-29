@@ -1,3 +1,8 @@
+// Publish the image to get displayed in the template.
+STEP 1: click ZOHO CREATOR LOGO -> Operations -> Publish -> Publish New -> Publish Report/Page.
+
+STEP 2:
+
 string hc_get_Image_Published_URL(int hc_id, string fieldName)
 {
 	image = Happy_Customer[ID == hc_id];
