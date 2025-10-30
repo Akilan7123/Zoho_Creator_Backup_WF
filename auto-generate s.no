@@ -1,0 +1,8 @@
+//Addition of row
+
+count = 0;
+for each  subFormDat in input.Item_Details
+{
+	count = count + 1;
+	subFormDat.S_No=count;
+}
