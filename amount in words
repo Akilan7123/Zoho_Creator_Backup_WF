@@ -1,0 +1,1 @@
+input.Total_Amount_in_Words = input.Grand_Total.toWords("en-in") + " " + "Rupees Only";
