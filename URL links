@@ -1,0 +1,7 @@
+// Template url (button click)
+
+openUrl("https://creatorapp.zoho.in/<owner_linkname>/<app_linkname>/pdf/<form_linkname>?recid=" + input.ID,"new window");
+
+// page url - data migrate from one form to another.
+
+openUrl("#Form:<form_linkname>?SRS_No=" + input.ID,"popup window");
