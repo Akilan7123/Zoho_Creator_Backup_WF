@@ -1,0 +1,22 @@
+if(input.Dimmer_Rating_Code != null)
+{
+	get_make = Product[ID == input.Dimmer_Rating_Code];
+	if(get_make.Make != null)
+	{
+		clear Dimmer_Purchased_From_Make;
+		make_list = List();
+		for each  make_val in get_make.Make
+		{
+			make_list.add(make_val);
+		}
+		input.Dimmer_Purchased_From_Make:ui.add(make_list);
+	}
+	else
+	{
+		clear Dimmer_Purchased_From_Make;
+	}
+}
+else
+{
+	clear Dimmer_Purchased_From_Make;
+}
