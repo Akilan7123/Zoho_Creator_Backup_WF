@@ -6,3 +6,16 @@ for each  subFormDat in input.Item_Details
 	count = count + 1;
 	subFormDat.S_No=count;
 }
+
+// Deletion of row
+
+for each  rec in input.Service_Kit
+{
+	new_rec = ifnull(rec.S_No,0) - 1;
+	rec.S_No=new_rec;
+	if(ifnull(rec.S_No,0) < ifnull(row.S_No,0))
+	{
+		new_rec = ifnull(rec.S_No,0) + 1;
+		rec.S_No=new_rec;
+	}
+}
