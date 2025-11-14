@@ -1,0 +1,9 @@
+if(duplicate_quote.count() > 0)
+	{
+		parts = currenct_quote.toList("-");
+		prefix = parts.get(0);
+		suffix = parts.get(1).toLong();
+		number_part = suffix + 1;
+		new_quote = prefix + "-" + number_part;
+		input.Quote = new_quote;
+	}
