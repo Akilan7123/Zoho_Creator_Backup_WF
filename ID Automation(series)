@@ -1,0 +1,13 @@
+// load of the form (ID automation)
+
+fetchRec = Sales_Series_Config[ID != 0];
+prefix = fetchRec.Customer_Calling_Prefix;
+series = fetchRec.Customer_Calling_Number_Series;
+workorderNumber = prefix + series;
+input.Customer_Number = workorderNumber;
+
+// successful form submission(update the series)
+
+fetchRec = Sales_Series_Config[ID != 0];
+number = ifNull(fetchRec.Customer_Calling_Number_Series,0) + 1;
+fetchRec.Customer_Calling_Number_Series=number;
