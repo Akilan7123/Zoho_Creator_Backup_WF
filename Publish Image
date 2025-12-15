@@ -25,3 +25,9 @@ string hc_get_Image_Published_URL(int hc_id, string fieldName)
 	}
 	return return_data;
 }
+<img src="https://creatorapp.zohopublic.in/file/shanth_adroitpower/adroit/All_Quotation_Template_Images/
+302392000000267101/Header/image-download/OZeDjphY1B225gH6wQ1B4G92T0N2gwDECCREuP6UECwvnk1EuRG1WKgyeDt2V7HhkpJfBpSUOCCb5atfxFd9G1Pqt4sg9sv28wpw
+?filepath=/1765790419913447_AdroitHeaderNew.jpg"
+      alt="Adroit Power Systems India Private Limited Header"
+	  style="width:100%;max-width:100%;display:block;"
+      >
