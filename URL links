@@ -5,3 +5,11 @@ openUrl("https://creatorapp.zoho.in/<owner_linkname>/<app_linkname>/pdf/<form_li
 // page url - data migrate from one form to another.
 
 openUrl("#Form:<form_linkname>?SRS_No=" + input.ID,"popup window");
+
+//parent refresh url
+
+openUrl("#Script:page.parent.refresh ","parent window");
+
+//open same record when a button is clicked
+
+openUrl("#Form:Quote?recLinkID=" + input.ID + "&viewLinkName=All_Quotes","Popup window");
