@@ -1,4 +1,4 @@
-// Template url (button click)
+// Template url (button click) download
 
 openUrl("https://creatorapp.zoho.in/<owner_linkname>/<app_linkname>/pdf/<form_linkname>?recid=" + input.ID,"new window");
 
