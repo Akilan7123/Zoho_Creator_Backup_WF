@@ -13,3 +13,9 @@ openUrl("#Script:page.parent.refresh ","parent window");
 //open same record when a button is clicked
 
 openUrl("#Form:Quote?recLinkID=" + input.ID + "&viewLinkName=All_Quotes","Popup window");
+
+//attach file in email 
+
+url :"https://creatorapp.zohopublic.in/export/" + zoho.appuri + "/pdf/<published_page_name>/
+nqZ72ebzfHGknEesEkbeN5zmxphYu6qqdJ7PUKFm3J33tJ1VwT80FWPbx1mAnHY7FMzj5gBbFaYKBZQQhCRW814AGkpDgFCvg9uG?
+record_id=" + input.ID + "&zc_FileName=Delivery_Challan&isc5page=true"
